@@ -12,6 +12,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatIconModule } from '@angular/material/icon';
+import { UserService } from './service/user.service';
+
 
 const routes: Routes = [
   { path:'', component: ContactmanagerAppComponent,
@@ -30,12 +33,14 @@ const ModuleComponent = [
   RouterModule.forChild(routes),
   MatListModule,
   MatToolbarModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatIconModule
 ]
 
 @NgModule({
   declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent],
   imports: [ModuleComponent],
-  exports: [ModuleComponent]
+  exports: [ModuleComponent],
+  providers: [UserService]
 })
 export class ContactmanagerModule { }
