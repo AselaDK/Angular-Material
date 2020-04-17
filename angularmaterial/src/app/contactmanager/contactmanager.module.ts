@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { NotesComponent } from './components/notes/notes.component';
 
 const routes: Routes = [
   { path:'', component: ContactmanagerAppComponent,
@@ -46,7 +47,7 @@ const ModuleComponent = [
 ]
 
 @NgModule({
-  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent],
+  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent, NotesComponent],
   imports: [ModuleComponent],
   exports: [ModuleComponent],
   providers: [UserService]
