@@ -19,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NotesComponent } from './components/notes/notes.component';
+import { MatTableDataSource, MatCell, MatTableModule, MatTable } from '@angular/material/table';
 
 const routes: Routes = [
   { path:'', component: ContactmanagerAppComponent,
@@ -43,7 +44,11 @@ const ModuleComponent = [
   MatIconModule,
   MatProgressSpinnerModule,
   MatCardModule,
-  MatTabsModule
+  MatTabsModule,
+  MatTableDataSource, 
+  MatCell,
+  MatTableModule,
+  MatTable
 ]
 
 @NgModule({
